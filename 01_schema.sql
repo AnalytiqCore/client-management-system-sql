@@ -3,9 +3,9 @@
 -- 01_schema.sql
 -- =========================================================
 
-DROP DATABASE IF EXISTS mercy_immigration_portfolio;
-CREATE DATABASE mercy_immigration_portfolio;
-USE mercy_immigration_portfolio;
+DROP DATABASE IF EXISTS mercy_immigration;
+CREATE DATABASE mercy_immigration;
+USE mercy_immigration;
 
 CREATE TABLE consultants (
     consultant_id INT PRIMARY KEY AUTO_INCREMENT,
