@@ -3,7 +3,7 @@
 -- 03_analysis_queries.sql
 -- =========================================================
 
-USE mercy_immigration_portfolio;
+USE mercy_immigration;
 
 -- 1. View all clients
 SELECT * FROM clients;
