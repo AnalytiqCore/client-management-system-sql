@@ -4,7 +4,7 @@
 -- Synthetic portfolio data
 -- =========================================================
 
-USE mercy_immigration_portfolio;
+USE mercy_immigration;
 
 INSERT INTO consultants
 (first_name, last_name, email, phone, specialization)
