@@ -3,8 +3,7 @@
 -- 01_schema.sql
 -- =========================================================
 
-DROP DATABASE IF EXISTS mercy_immigration;
-CREATE DATABASE mercy_immigration;
+CREATE DATABASE IF NOT EXISTS mercy_immigration;
 USE mercy_immigration;
 
 CREATE TABLE consultants (
