@@ -235,9 +235,15 @@ ON consultant_details.consultant_id = consultant_average.consultant_id;
 -- Keep each client row while showing consultant-group average
 SELECT
     first_name,
-    consultant_id,
     consultation_fee,
-    AVG(consultation_fee) OVER(
-        PARTITION BY consultant_id
-    ) AS consultant_avg_fee
+    AVG(consultation_fee) OVER() AS overall_avg_fee
+FROM clients;
+-- 31. Window Function with PARTITION BY:
+-- Show each client and number of clients targeting the same country
+SELECT
+    first_name,
+    target_country,
+    COUNT(*) OVER(
+        PARTITION BY target_country
+    ) AS clients_in_same_country
 FROM clients;
